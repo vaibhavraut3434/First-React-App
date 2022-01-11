@@ -46,10 +46,11 @@ function Home(props) {
 
   return (
     <div className="Home">
-      <Container fluid="md">
+      <Container fluid="md" >
         <Row>
-          <Col md="6">
-            <h3>Enter Details</h3>
+          <Col md="6" id="InputCard">
+            <h3><Row  className="justify-content-md-center" >Enter Details</Row></h3>
+            <Row>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control
@@ -93,16 +94,19 @@ function Home(props) {
                 />
               </Form.Group>
 
-              <Button variant="primary" type="submit">
+              <Row><Button style={{width:'50%',position:"relative",margin:0,left:'20%'}} variant="primary" type="submit">
                 Submit
-              </Button>
+              </Button></Row>
             </Form>
+            </Row>
           </Col>
-          <Col md="6">
-            <Row className="justify-content-md-center">
-              <Row>
-                <h1>Details</h1>
+          <Col md="6" id="DetailsCard" >
+            {/*<Col style={{backgroundColor:"red"}}>*/}
+              <h1>
+              <Row className="justify-content-md-center" style={{backgroundColor:""}}>
+                Details
               </Row>
+              </h1>
               <h2>
                 <Row className="justify-content-md-center" id="idName">
                   Name
@@ -123,7 +127,7 @@ function Home(props) {
                   Address
                 </Row>
               </h6>
-            </Row>
+            {/*</Col>*/}
           </Col>
         </Row>
       </Container>
@@ -142,31 +146,73 @@ function Api(props) {
 function EventListener() {
   const [count, setCount] = useState(0);
   const [altName, setAltName] = useState();
+  const [colors, setColor] = useState(100);
   return (
     <div className="EventListner">
-      <Container>
-        <Row>
+      <Container style={{ backgroundColor: colors }}>
+        <Row >
           <h1>Event listners</h1>
-        </Row>
-        <Row>
-          <Col>
+        </Row >
+        <Row >
+          <Col  className="SquareBorder">
             <p>You clicked {count} times</p>
             <Button variant="primary" onClick={() => setCount(count + 1)}>
               Click me
             </Button>
           </Col>
-          <Col>
-            <p>Click to get a alert.</p>
-            <input
-              type="text"
-              value={altName}
-              onChange={(e) => setAltName(e.target.value)}
-            />
-            <Button variant="primary" onClick={() => alert("Hi, " + altName)}>
-              Alert me
+          <Col className="SquareBorder">
+            <Row>
+              <p>Click to get a alert.</p>
+            </Row>
+            <Row>
+              <Col>
+                <input
+                  type="text"
+                  value={altName}
+                  onChange={(e) => setAltName(e.target.value)}
+                />
+              </Col>
+              <Col >
+                <Button
+                  variant="primary"
+                  onClick={() => alert("Hi, " + altName)}
+                >
+                  Alert me
+                </Button>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="SquareBorder">
+            <p>Click to change background color.</p>
+            <Button
+              variant="primary"
+              value="red"
+              onClick={(e) => setColor(e.target.value)}
+            >
+              Red
+            </Button>
+            <Button
+              variant="primary"
+              value="green"
+              onClick={(e) => setColor(e.target.value)}
+            >
+              Green
+            </Button>
+            <Button
+              variant="primary"
+              value="white"
+              onClick={(e) => setColor(e.target.value)}
+            >
+              White
+            </Button>
+            <Button
+              variant="primary"
+              value="grey"
+              onClick={(e) => setColor(e.target.value)}
+            >
+              Grey
             </Button>
           </Col>
-          <Col>3</Col>
         </Row>
       </Container>
     </div>
@@ -180,24 +226,24 @@ function App() {
   return (
     <BrowserRouter>
       <div className="Navigation">
-        <Container>
-          <Row>
+        <Container >
+          <Row >
             <Col>
               <h1>Navigation</h1>
             </Col>
-            <Col >
+            <Col className="vertical-center">
               <Link to="/">
-                <Button variant="primary">Home</Button>
+                <Button variant="dark">Home</Button>
               </Link>
             </Col>
             <Col>
               <Link to="/api">
-                <Button variant="primary">API</Button>
+                <Button variant="dark">API</Button>
               </Link>
             </Col>
             <Col>
               <Link to="/event">
-                <Button variant="primary">Event Listners</Button>
+                <Button variant="dark">Event Listners</Button>
               </Link>
             </Col>
           </Row>

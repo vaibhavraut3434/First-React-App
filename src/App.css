@@ -1,10 +1,10 @@
 .Navigation {
-  background-color: rgb(0, 204, 255);
+  background-color: rgb(161, 150, 202);
   
 }
 
 .Home {
-  background-color: rgb(0, 255, 21);
+  background-color: rgb(255, 255, 255);
 }
 
 .Api {
@@ -12,7 +12,21 @@
 }
 
 .EventListner {
-  background-color: rgb(217, 255, 0);
+  background-color: rgb(233, 243, 93);
+}
+.SquareBorder {
+  position: relative;
+  border: 1px solid rgb(32, 46, 32);
+}
+#InputCard {
+  background-color: rgb(233, 243, 93);
+  position: relative;
+  border: 1px solid rgb(32, 46, 32);
+}
+#DetailsCard {
+  background-color: rgb(158, 241, 120);
+  position: relative;
+  border: 1px solid rgb(32, 46, 32);
 }
 .App {
   text-align: center;
