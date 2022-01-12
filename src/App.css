@@ -2,9 +2,13 @@
   background-color: rgb(161, 150, 202);
   
 }
+#CenterBtn{
+  margin:20;
+}
 
 .Home {
   background-color: rgb(255, 255, 255);
+  
 }
 
 .Api {
