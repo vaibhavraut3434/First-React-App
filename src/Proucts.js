@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+//import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Products() {

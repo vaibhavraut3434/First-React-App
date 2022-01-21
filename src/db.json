@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "firstName":"Vaibhav",
+        "lastName":"Raut",
+        "contactNo":"86xxxxxxxx",
+        "address":"Shegaon, Maharashtra",
+        "role":"Assistant System Engineer"
+    },
+    {
+        "id":2,
+        "firstName":"Ankit",
+        "lastName":"Kumar",
+        "contactNo":"90xxxxxxxx",
+        "address":"Kolkata",
+        "role":"System Engineer"
+    },
+    {
+        "id":3,
+        "firstName":"Kapil",
+        "lastName":"Chaudhary",
+        "contactNo":"98xxxxxxxx",
+        "address":"Dhule, Maharashtra",
+        "role":"Junior Developer"
+    },
+    {
+        "id":4,
+        "firstName":"Ram",
+        "lastName":"Kure",
+        "contactNo":"89xxxxxxxx",
+        "address":"Nanded, Maharashtra",
+        "role":"Senior Developer"
+    },
+    {
+        "id":5,
+        "firstName":"Rohan",
+        "lastName":"Shinde",
+        "contactNo":"99xxxxxxxx",
+        "address":"Dhule, Maharashtra",
+        "role":"Android Devloper"
+    }
+
+
+]
